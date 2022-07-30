@@ -2,12 +2,10 @@ function getComputerChoice() {
   let randomNumber = Math.floor(Math.random() * 3) + 1;
 
   if (randomNumber === 1) {
-    console.log("rock");
+    return "rock";
   } else if (randomNumber === 2) {
-    console.log("paper");
+    return "paper";
   } else {
-    console.log("scissor");
+    return "scissor";
   }
 }
-
-getComputerChoice();
