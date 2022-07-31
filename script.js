@@ -12,6 +12,22 @@ function getComputerChoice() {
 let computer = getComputerChoice();
 let player = prompt("rock, paper, or scissors?").toLowerCase();
 
-// function singleRound(playerSelection, computerSelection){
+function singleRound(player, computer) {
+  if (computer === player) {
+    console.log("DRAW!");
+  } else if (computer === "rock" && player === "paper") {
+    console.log(
+      `You win! The computer played ${computer} and you played ${player}`
+    );
+  } else if (computer === "paper" && player === "scissors") {
+    console.log(
+      `You win! The computer played ${computer} and you played ${player}`
+    );
+  } else if (computer === "scissors" && player === "rock") {
+    console.log(
+      `You win! The computer played ${computer} and you played ${player}`
+    );
+  }
+}
 
-// }
+singleRound(computer, player);
