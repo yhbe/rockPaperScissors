@@ -9,8 +9,8 @@ function getComputerChoice() {
   }
 }
 
-let computerSelection = getComputerChoice();
-let playerSelection = prompt("rock, paper, or scissors?").toLowerCase();
+let computer = getComputerChoice();
+let player = prompt("rock, paper, or scissors?").toLowerCase();
 
 // function singleRound(playerSelection, computerSelection){
 
