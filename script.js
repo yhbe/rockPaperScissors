@@ -27,12 +27,34 @@ function playtheGame(playerSelection, computerSelection) {
   } else if (computerSelection === "paper" && playerSelection === "rock") {
     return "You Lose! Paper beats rock!";
   } else if (computerSelection === "scissors" && playerSelection === "paper") {
-    return "You lose! Scissors beats paper!";
+    return "You Lose! Scissors beats paper!";
   } else return "sorry lets play again...";
 }
 
 function game() {
-  for (let i = 0; i < 5; i++) {}
+  let computer = 0;
+  let player = 0;
+
+  for (let i = 0; i < 5; i++) {
+    let match = playtheGame(playerSelection, computerSelection);
+
+    if (match.includes("win")) {
+      player++;
+      prompt(match);
+    } else if (match.includes("Lose")) {
+      computer++;
+      prompt(match);
+    } else if (match.includes("DRAW")) {
+      i--;
+      prompt(match);
+    }
+
+    if (computer === 3) {
+      return alert("Computer wins!");
+    } else if (player === 3) {
+      return alert("Player wins!");
+    }
+  }
 }
 
-console.log(playtheGame(playerSelection, computerSelection));
+game();
