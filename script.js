@@ -1,3 +1,6 @@
+let computer = 0;
+let player = 0;
+
 function getComputerChoice() {
   let randomNumber = Math.floor(Math.random() * 3) + 1;
 
@@ -17,44 +20,31 @@ function playtheGame(playerSelection, computerSelection) {
   if (computerSelection === playerSelection) {
     return "DRAW!";
   } else if (computerSelection === "rock" && playerSelection === "paper") {
-    return "You win! Paper beats rock";
+    return player++;
   } else if (computerSelection === "paper" && playerSelection === "scissors") {
-    return "You win! Scissors beats paper";
+    return player++;
   } else if (computerSelection === "scissors" && playerSelection === "rock") {
-    return "You win! Rock beats scissors!";
+    return player++;
   } else if (computerSelection === "rock" && playerSelection === "scissors") {
-    return "You Lose! Rock beats scissors!";
+    return computer++;
   } else if (computerSelection === "paper" && playerSelection === "rock") {
-    return "You Lose! Paper beats rock!";
+    return computer++;
   } else if (computerSelection === "scissors" && playerSelection === "paper") {
-    return "You Lose! Scissors beats paper!";
+    return computer++;
   } else return "sorry lets play again...";
 }
 
 function game() {
-  let computer = 0;
-  let player = 0;
-
   for (let i = 0; i < 5; i++) {
-    let match = playtheGame(playerSelection, computerSelection);
-
-    if (match.includes("win")) {
-      player++;
-      prompt(match);
-    } else if (match.includes("Lose")) {
-      computer++;
-      prompt(match);
-    } else if (match.includes("DRAW")) {
-      i--;
-      prompt(match);
-    }
-
-    if (computer === 3) {
-      return alert("Computer wins!");
-    } else if (player === 3) {
-      return alert("Player wins!");
-    }
+    playtheGame();
   }
+
+  console.log(
+    `The computer played ${computerSelection}, you played ${playerSelection}`
+  );
+
+  if (player === 3) return "Player wins!";
+  else if (computer === 3) return "Computer wins!";
 }
 
 game();
