@@ -17,17 +17,47 @@ function singleRound(player, computer) {
     console.log("DRAW!");
   } else if (computer === "rock" && player === "paper") {
     console.log(
-      `You win! The computer played ${computer} and you played ${player}`
+      `You win! 
+      You played ${player}
+      The computer played ${computer}
+      *${player} beats ${computer}*`
     );
   } else if (computer === "paper" && player === "scissors") {
     console.log(
-      `You win! The computer played ${computer} and you played ${player}`
+      `You win! 
+      You played ${player}
+      The computer played ${computer}
+      *${player} beats ${computer}*`
     );
   } else if (computer === "scissors" && player === "rock") {
     console.log(
-      `You win! The computer played ${computer} and you played ${player}`
+      `You win! 
+      You played ${player} 
+      The computer played ${computer}
+      *${player} beats ${computer}*`
+    );
+  } else if (computer === "rock" && player === "scissors") {
+    console.log(
+      `You lose! 
+      You played ${player} 
+      The computer played ${computer}
+      *${computer} beats ${player}*`
+    );
+  } else if (computer === "paper" && player === "rock") {
+    console.log(
+      `You lose! 
+      You played ${player}
+      The computer played ${computer}
+      *${computer} beats ${player}*`
+    );
+  } else if (computer === "scissors" && player === "paper") {
+    console.log(
+      `You lose! 
+      You played ${player}
+      The computer played ${computer}
+      *${computer} beats ${player}*`
     );
   }
 }
 
-singleRound(computer, player);
+singleRound(player, computer);
