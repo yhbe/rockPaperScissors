@@ -9,8 +9,6 @@ function getComputerChoice() {
   }
 }
 
-// let computer = getComputerChoice();
-// let player = prompt("rock, paper, or scissors?").toLowerCase();
 let computerScore = 0;
 let playerScore = 0;
 
@@ -74,6 +72,11 @@ function game() {
   for (let i = 0; i < 5; i++) {
     singleRound();
   }
+  if (computerScore > playerScore) {
+    console.log("Computer wins!!");
+  } else if (playerScore > computerScore) {
+    console.log("Player wins!!");
+  } else console.log("Its a tie..");
 }
 
 game();
