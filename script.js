@@ -9,10 +9,14 @@ function getComputerChoice() {
   }
 }
 
-let computer = getComputerChoice();
-let player = prompt("rock, paper, or scissors?").toLowerCase();
+// let computer = getComputerChoice();
+// let player = prompt("rock, paper, or scissors?").toLowerCase();
+let computerScore = 0;
+let playerScore = 0;
 
-function singleRound(player, computer) {
+function singleRound() {
+  let computer = getComputerChoice();
+  let player = prompt("rock, paper, or scissors?").toLowerCase();
   if (computer === player) {
     console.log("DRAW!");
   } else if (computer === "rock" && player === "paper") {
@@ -66,12 +70,9 @@ function singleRound(player, computer) {
   }
 }
 
-let computerScore = 0;
-let playerScore = 0;
-
 function game() {
   for (let i = 0; i < 5; i++) {
-    singleRound(player, computer);
+    singleRound();
   }
 }
 
