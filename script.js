@@ -22,6 +22,7 @@ function singleRound(player, computer) {
       The computer played ${computer}
       *${player} beats ${computer}*`
     );
+    return playerScore++;
   } else if (computer === "paper" && player === "scissors") {
     console.log(
       `You win! 
@@ -29,6 +30,7 @@ function singleRound(player, computer) {
       The computer played ${computer}
       *${player} beats ${computer}*`
     );
+    return playerScore++;
   } else if (computer === "scissors" && player === "rock") {
     console.log(
       `You win! 
@@ -36,6 +38,7 @@ function singleRound(player, computer) {
       The computer played ${computer}
       *${player} beats ${computer}*`
     );
+    return playerScore++;
   } else if (computer === "rock" && player === "scissors") {
     console.log(
       `You lose! 
@@ -43,6 +46,7 @@ function singleRound(player, computer) {
       The computer played ${computer}
       *${computer} beats ${player}*`
     );
+    return computerScore++;
   } else if (computer === "paper" && player === "rock") {
     console.log(
       `You lose! 
@@ -50,6 +54,7 @@ function singleRound(player, computer) {
       The computer played ${computer}
       *${computer} beats ${player}*`
     );
+    return computerScore++;
   } else if (computer === "scissors" && player === "paper") {
     console.log(
       `You lose! 
@@ -57,7 +62,17 @@ function singleRound(player, computer) {
       The computer played ${computer}
       *${computer} beats ${player}*`
     );
+    return computerScore++;
   }
 }
 
-singleRound(player, computer);
+let computerScore = 0;
+let playerScore = 0;
+
+function game() {
+  for (let i = 0; i < 5; i++) {
+    singleRound(player, computer);
+  }
+}
+
+game();
