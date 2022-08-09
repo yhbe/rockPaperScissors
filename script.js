@@ -69,9 +69,9 @@ function singleRound() {
 }
 
 function game() {
-  for (let i = 0; i < 5; i++) {
-    singleRound();
-  }
+  // for (let i = 0; i < 5; i++) {
+  //   singleRound();
+  // }
   if (computerScore > playerScore) {
     console.log("Computer wins!!");
   } else if (playerScore > computerScore) {
