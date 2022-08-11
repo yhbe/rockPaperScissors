@@ -11,10 +11,11 @@ function getComputerChoice() {
 
 let computerScore = 0;
 let playerScore = 0;
+// let pup = document.querySelectorAll("#selection");
 
-function singleRound() {
+function singleRound(player) {
   let computer = getComputerChoice();
-  let player = prompt("rock, paper, or scissors?").toLowerCase();
+
   if (computer === player) {
     console.log("DRAW!");
   } else if (computer === "rock" && player === "paper") {
