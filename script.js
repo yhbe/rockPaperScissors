@@ -11,7 +11,12 @@ function getComputerChoice() {
 
 let computerScore = 0;
 let playerScore = 0;
-// let pup = document.querySelectorAll("#selection");
+
+document.querySelectorAll("#selection").forEach((selectionbutton) => {
+  selectionbutton.addEventListener("click", (e) => {
+    singleRound(selectionbutton.value);
+  });
+});
 
 function singleRound(player) {
   let computer = getComputerChoice();
