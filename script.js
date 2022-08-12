@@ -34,7 +34,7 @@ function singleRound(player) {
       You played ${player}
       The computer played ${computer}
       *${player} beats ${computer}*`;
-    return playerScore++;
+    return (playerhtml.textContent = `Player Score: ${playerScore++}`);
   } else if (computer === "paper" && player === "scissors") {
     div.textContent = `You win! 
       You played ${player}
@@ -69,9 +69,9 @@ function singleRound(player) {
 }
 
 // function game() {
-//   // for (let i = 0; i < 5; i++) {
-//   //   singleRound();
-//   // }
+//   for (let i = 0; i < 5; i++) {
+//     singleRound(player);
+//   }
 //   if (computerScore > playerScore) {
 //     console.log("Computer wins!!");
 //   } else if (playerScore > computerScore) {
