@@ -7,10 +7,27 @@
     <title>Document</title>
   </head>
   <body>
-    <button id="selection" value="rock">Rock!</button>
-    <button id="selection" value="paper">Paper!</button>
-    <button id="selection" value="scissors">Scissors!</button>
-    <div id="results"></div>
+    <div id="score" style="justify-content: space-around; display: flex">
+      <div id="computer">Computer Score: 0</div>
+      <div id="player">Player Score: 0</div>
+    </div>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 20px;
+      "
+    >
+      <button id="selection" value="rock">Rock!</button>
+      <button id="selection" value="paper">Paper!</button>
+      <button id="selection" value="scissors">Scissors!</button>
+    </div>
+
+    <div
+      id="results"
+      style="display: flex; justify-content: center; margin-top: 35px"
+    ></div>
     <script src="script.js"></script>
   </body>
 </html>

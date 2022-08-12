@@ -11,6 +11,11 @@ function getComputerChoice() {
 
 let computerScore = 0;
 let playerScore = 0;
+let playerhtml = document.querySelector("#player");
+let computerhtml = document.querySelector("#computer");
+playerhtml.textContent = `Player Score: ${playerScore}`;
+computerhtml.textContent = `Computer Score: ${computerScore}`;
+
 let div = document.querySelector("#results");
 
 document.querySelectorAll("#selection").forEach((selectionbutton) => {
@@ -25,7 +30,7 @@ function singleRound(player) {
   if (computer === player) {
     div.textContent = "DRAW!";
   } else if (computer === "rock" && player === "paper") {
-    div.textContent = `You win! 
+    div.textContent = `You win!
       You played ${player}
       The computer played ${computer}
       *${player} beats ${computer}*`;
