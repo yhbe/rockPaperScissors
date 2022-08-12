@@ -11,6 +11,7 @@ function getComputerChoice() {
 
 let computerScore = 0;
 let playerScore = 0;
+let div = document.querySelector("#results");
 
 document.querySelectorAll("#selection").forEach((selectionbutton) => {
   selectionbutton.addEventListener("click", (e) => {
@@ -22,54 +23,42 @@ function singleRound(player) {
   let computer = getComputerChoice();
 
   if (computer === player) {
-    console.log("DRAW!");
+    div.textContent = "DRAW!";
   } else if (computer === "rock" && player === "paper") {
-    console.log(
-      `You win! 
+    div.textContent = `You win! 
       You played ${player}
       The computer played ${computer}
-      *${player} beats ${computer}*`
-    );
+      *${player} beats ${computer}*`;
     return playerScore++;
   } else if (computer === "paper" && player === "scissors") {
-    console.log(
-      `You win! 
+    div.textContent = `You win! 
       You played ${player}
       The computer played ${computer}
-      *${player} beats ${computer}*`
-    );
+      *${player} beats ${computer}*`;
     return playerScore++;
   } else if (computer === "scissors" && player === "rock") {
-    console.log(
-      `You win! 
+    div.textContent = `You win! 
       You played ${player} 
       The computer played ${computer}
-      *${player} beats ${computer}*`
-    );
+      *${player} beats ${computer}*`;
     return playerScore++;
   } else if (computer === "rock" && player === "scissors") {
-    console.log(
-      `You lose! 
+    div.textContent = `You lose! 
       You played ${player} 
       The computer played ${computer}
-      *${computer} beats ${player}*`
-    );
+      *${computer} beats ${player}*`;
     return computerScore++;
   } else if (computer === "paper" && player === "rock") {
-    console.log(
-      `You lose! 
+    div.textContent = `You lose! 
       You played ${player}
       The computer played ${computer}
-      *${computer} beats ${player}*`
-    );
+      *${computer} beats ${player}*`;
     return computerScore++;
   } else if (computer === "scissors" && player === "paper") {
-    console.log(
-      `You lose! 
+    div.textContent = `You lose! 
       You played ${player}
       The computer played ${computer}
-      *${computer} beats ${player}*`
-    );
+      *${computer} beats ${player}*`;
     return computerScore++;
   }
 }
