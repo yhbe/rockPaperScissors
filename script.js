@@ -66,17 +66,17 @@ function singleRound(player) {
       *${computer} beats ${player}*`;
     return (computerhtml.textContent = `Computer Score: ${++computerScore}`);
   }
+  return game(playerScore, computerScore);
 }
 
-// function game() {
-//   for (let i = 0; i < 5; i++) {
-//     singleRound(player);
-//   }
-//   if (computerScore > playerScore) {
-//     console.log("Computer wins!!");
-//   } else if (playerScore > computerScore) {
-//     console.log("Player wins!!");
-//   } else console.log("Its a tie..");
-// }
-
-// game();
+function game(playerScore, computerScore) {
+  let winner;
+  if (computerScore === 4) {
+    alert("Computer Wins!");
+    return ++winner;
+  } else if (playerScore === 4) {
+    alert("Player Wins!");
+    return ++winner;
+  }
+  return erase();
+}
