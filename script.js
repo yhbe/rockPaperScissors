@@ -34,47 +34,64 @@ function singleRound(player) {
       You played ${player}
       The computer played ${computer}
       *${player} beats ${computer}*`;
-    return (playerhtml.textContent = `Player Score: ${++playerScore}`);
+    return (
+      (playerhtml.textContent = `Player Score: ${++playerScore}`),
+      game(playerScore, computerScore)
+    );
   } else if (computer === "paper" && player === "scissors") {
     div.textContent = `You win! 
       You played ${player}
       The computer played ${computer}
       *${player} beats ${computer}*`;
-    return (playerhtml.textContent = `Player Score: ${++playerScore}`);
+    return (
+      (playerhtml.textContent = `Player Score: ${++playerScore}`),
+      game(playerScore, computerScore)
+    );
   } else if (computer === "scissors" && player === "rock") {
     div.textContent = `You win! 
       You played ${player} 
       The computer played ${computer}
       *${player} beats ${computer}*`;
-    return (playerhtml.textContent = `Player Score: ${++playerScore}`);
+    return (
+      (playerhtml.textContent = `Player Score: ${++playerScore}`),
+      game(playerScore, computerScore)
+    );
   } else if (computer === "rock" && player === "scissors") {
     div.textContent = `You lose! 
       You played ${player} 
       The computer played ${computer}
       *${computer} beats ${player}*`;
-    return (computerhtml.textContent = `Computer Score: ${++computerScore}`);
+    return (
+      (computerhtml.textContent = `Computer Score: ${++computerScore}`),
+      game(playerScore, computerScore)
+    );
   } else if (computer === "paper" && player === "rock") {
     div.textContent = `You lose! 
       You played ${player}
       The computer played ${computer}
       *${computer} beats ${player}*`;
-    return (computerhtml.textContent = `Computer Score: ${++computerScore}`);
+    return (
+      (computerhtml.textContent = `Computer Score: ${++computerScore}`),
+      game(playerScore, computerScore)
+    );
   } else if (computer === "scissors" && player === "paper") {
     div.textContent = `You lose! 
       You played ${player}
       The computer played ${computer}
       *${computer} beats ${player}*`;
-    return (computerhtml.textContent = `Computer Score: ${++computerScore}`);
+    return (
+      (computerhtml.textContent = `Computer Score: ${++computerScore}`),
+      game(playerScore, computerScore)
+    );
   }
-  return game(playerScore, computerScore);
 }
 
 function game(playerScore, computerScore) {
   let winner;
-  if (computerScore === 4) {
+  if (computerScore === 5) {
     alert("Computer Wins!");
     return ++winner;
-  } else if (playerScore === 4) {
+  } else if (playerScore === 5) {
     alert("Player Wins!");
     return ++winner;
   }
