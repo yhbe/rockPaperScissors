@@ -87,13 +87,20 @@ function singleRound(player) {
 }
 
 function game(playerScore, computerScore) {
-  let winner;
   if (computerScore === 5) {
     alert("Computer Wins!");
-    return ++winner;
   } else if (playerScore === 5) {
     alert("Player Wins!");
-    return ++winner;
   }
-  return erase();
+}
+
+function reset() {
+  let newPlayer = 0;
+  let newComputer = 0;
+  return (
+    (playerhtml.textContent = `Player Score: ${newPlayer}`),
+    (computerhtml.textContent = `Computer Score: ${newComputer}`),
+    ((div.textContent = ""), (computerScore = 0)),
+    (playerScore = 0)
+  );
 }
