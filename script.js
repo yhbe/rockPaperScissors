@@ -93,3 +93,14 @@ function game(playerScore, computerScore) {
     alert("Player Wins!");
   }
 }
+
+function reset() {
+  let newPlayer = 0;
+  let newComputer = 0;
+  return (
+    (playerhtml.textContent = `Player Score: ${newPlayer}`),
+    (computerhtml.textContent = `Computer Score: ${newComputer}`),
+    (computerScore = 0),
+    (playerScore = 0)
+  );
+}
