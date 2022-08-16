@@ -1,0 +1,173 @@
+[33mcommit 47dfa7ef045e56b49b2cc5d57c59344b8b31d76c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;32mrps-ui[m[33m)[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Tue Aug 16 17:59:59 2022 -0400
+
+    readme!
+
+[33mcommit 5d8686de2e2a268804a9b25d37e5227ad36fc644[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Tue Aug 16 17:56:14 2022 -0400
+
+    wrote reset func and added reset button
+
+[33mcommit c30db53ab8872be340ee8e56da85eb982d2829f0[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Tue Aug 16 00:13:32 2022 -0400
+
+    cleaning up game()
+
+[33mcommit f521b61cfc2e95462360bdcd7dba53ed498b5100[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Tue Aug 16 00:12:33 2022 -0400
+
+    return function game()
+
+[33mcommit 4abc3147f2ab5ebc9ac5f2306b010a5fbbf2bf2b[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Mon Aug 15 23:52:27 2022 -0400
+
+    new function game
+
+[33mcommit 86fc12ab3752051246c5739611f7e9febbcbb41e[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Mon Aug 15 23:51:55 2022 -0400
+
+    new function Game!
+
+[33mcommit 7bde9afb8864dda76d5fdac18892204ade93ec6a[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Sun Aug 14 19:38:56 2022 -0400
+
+    singleRound Return work
+
+[33mcommit 582fa081c20517839228d3f332f3fd4f8dfd8cbd[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Fri Aug 12 13:18:17 2022 -0400
+
+    display scoreboard code
+
+[33mcommit ac0e8231f2dd41888ffcca36807b926a2c2c0287[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Fri Aug 12 12:47:15 2022 -0400
+
+    basic styling
+
+[33mcommit a8a9c0046e20ad96e498fe5d84649ec5157da312[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Fri Aug 12 12:21:29 2022 -0400
+
+    singleRound removing console.logs
+
+[33mcommit 7bcb9996bbce2edb698b67da4f74ef4228564163[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Thu Aug 11 17:48:02 2022 -0400
+
+    added event listener instead
+
+[33mcommit 9d040787366f80d4f8076ef8adedd5ee97dc9f8c[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Thu Aug 11 17:37:34 2022 -0400
+
+    on click functionality
+
+[33mcommit a0573a7b5d0d78a2c8651ec9a4f0cb23c0e15678[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Tue Aug 9 17:20:55 2022 -0400
+
+    comment out game function
+
+[33mcommit 016108485243d4b934647d3b31c4e337fdbb82c3[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Tue Aug 9 17:19:16 2022 -0400
+
+    making html buttons
+
+[33mcommit 22e082f01f4de6fdfb5530ef7216ea560af5a9cc[m[33m ([m[1;31morigin/rps-ui[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mnewBranch[m[33m)[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Tue Aug 2 17:37:45 2022 -0400
+
+    game winner logic
+
+[33mcommit 2ba74e22709b06999151f2c83ca128610125e5e9[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Tue Aug 2 12:13:45 2022 -0400
+
+    fixing singleround logic
+
+[33mcommit f24218811115897fab207a5d78d086a13010ed42[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Tue Aug 2 11:46:55 2022 -0400
+
+    game function creation
+
+[33mcommit 8a66d7ec7692190fe8b30bc545eb537dbbd00ae9[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Sun Jul 31 21:07:54 2022 -0400
+
+    finished logic
+
+[33mcommit 694004d3e29f620d6991eec72b970d38bc8eda4d[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Sun Jul 31 17:50:11 2022 -0400
+
+    win conditions
+
+[33mcommit 2fc6f1be54256a1660efbf071bcb4205c30a3dcc[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Sun Jul 31 17:39:21 2022 -0400
+
+    changed names of variables
+
+[33mcommit 700d18b56ac1205e14480bac910441a055ffd223[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Sun Jul 31 17:38:52 2022 -0400
+
+    computerSelection & playerSelection variabless
+
+[33mcommit b76fc514442e36b715e41a11d5db4290f9402e02[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Sun Jul 31 17:34:58 2022 -0400
+
+    Restarted  getComputerChoice random number logic
+
+[33mcommit 81a5584fb326efaccff67ab296ea17511ff03674[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Sun Jul 31 17:23:16 2022 -0400
+
+    fixing logic
+
+[33mcommit 807f913bc9e5cc8e3ac55d7304a13a1215fe49a5[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Sun Jul 31 10:47:53 2022 -0400
+
+    working on game logic
+
+[33mcommit 195723f124cb927c53dff41210c9c7669f01b8fe[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Sat Jul 30 10:22:19 2022 -0400
+
+    play the game logic
+
+[33mcommit 4645b33d1723bdd5c1f660c2bc8841d6c8d3f916[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Sat Jul 30 09:30:14 2022 -0400
+
+    return rock/paper/scissor
+
+[33mcommit 7795ae6ea3e6adc157d853f947f12185426205f2[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Fri Jul 29 17:24:10 2022 -0400
+
+    rock/paper/scissor algorithm
+
+[33mcommit aec784407a1cd03b0e5ea5b7daa852c9d78dc07a[m
+Author: SHEF <Shefqetmush@gmail.com>
+Date:   Fri Jul 29 17:05:15 2022 -0400
+
+     new html & javascript
+
+[33mcommit 1095951948dd1ce51c0ed4a132c46e90a190be96[m
+Author: Shefqetmush <101876022+Shefqetmush@users.noreply.github.com>
+Date:   Fri Jul 29 17:01:42 2022 -0400
+
+    Initial commit

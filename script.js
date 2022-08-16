@@ -100,7 +100,7 @@ function reset() {
   return (
     (playerhtml.textContent = `Player Score: ${newPlayer}`),
     (computerhtml.textContent = `Computer Score: ${newComputer}`),
-    (computerScore = 0),
+    ((div.textContent = ""), (computerScore = 0)),
     (playerScore = 0)
   );
 }
